@@ -7,6 +7,7 @@
 <body>
 <style>
 @media only screen and (max-width: 600px) {
+.content-cell { padding: 20px 16px !important; }
 .inner-body {
 width: 100% !important;
 }
@@ -32,7 +33,8 @@ width: 100% !important;
 <!-- Email Body -->
 <tr>
 <td class="body" width="100%" cellpadding="0" cellspacing="0">
-<table class="inner-body" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation">
+<!--[if mso]><table role="presentation" align="center" width="600" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+<table class="inner-body" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="width:100%; max-width:600px; table-layout:fixed;">
 <!-- Body content -->
 <tr>
 <td class="content-cell">
@@ -42,6 +44,7 @@ width: 100% !important;
 </td>
 </tr>
 </table>
+<!--[if mso]></td></tr></table><![endif]-->
 </td>
 </tr>
 

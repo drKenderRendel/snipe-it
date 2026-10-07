@@ -298,3 +298,141 @@ img {
 .break-all {
     word-break: break-all;
 }
+
+/* Append this file to the default.css copied from YOUR running Snipe-IT image.
+   Laravel will inline the resulting rules in outgoing HTML mail. */
+
+body, .wrapper, .body {
+    background-color: #f3f6fa;
+}
+
+.body {
+    border: 0;
+}
+
+.header {
+    padding: 22px 0 16px;
+}
+
+.header a {
+    color: #17324d;
+    font-size: 18px;
+    text-shadow: none;
+}
+
+.header img {
+    display: block;
+    width: 180px;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.inner-body {
+    background-color: #ffffff;
+    border: 1px solid #e1e8f0;
+    border-radius: 10px;
+}
+
+.content-cell {
+    padding: 28px 30px;
+}
+
+h1, h2, h3 {
+    color: #17324d;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 1.35;
+}
+
+h2 {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+p {
+    color: #334155;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+a {
+    color: #14699d;
+}
+
+/* Keep pictures in other stock mail templates at a useful size. */
+.content-cell center img {
+    width: 180px;
+    max-width: 180px;
+    height: auto;
+}
+
+.table table {
+    border-collapse: collapse;
+    margin: 16px auto;
+}
+
+.table th {
+    background-color: #eef3f8;
+    border-bottom: 1px solid #dce4ed;
+    color: #334155;
+    font-size: 12px;
+    padding: 9px 10px;
+    text-align: left;
+}
+
+.table td {
+    border-bottom: 1px solid #e6ecf2;
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* Cards used by the accompanying user-inventory template. */
+.inventory-card {
+    background-color: #f8fafc;
+    border: 1px solid #e1e8f0;
+    border-collapse: collapse;
+    margin: 0 0 12px;
+    width: 100%;
+    -premailer-width: 100%;
+}
+
+.inventory-card td {
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 12px;
+    vertical-align: top;
+}
+
+.inventory-name {
+    color: #17324d;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.inventory-meta {
+    color: #526173;
+    font-size: 12px;
+}
+
+.footer p {
+    color: #64748b;
+    font-size: 11px;
+}
+
+/* v8.8: constrain the wrapper and wrap long details in narrow reading panes. */
+.inner-body { width:100%; max-width:600px; table-layout:fixed; -premailer-width:100%; }
+.footer { width:100%; max-width:600px; -premailer-width:100%; }
+.header { padding:24px 16px; }
+.header img { width:180px; max-width:100%; height:auto; }
+.table table { table-layout:fixed; width:100%; }
+.table td { text-align:left; overflow-wrap:anywhere; word-wrap:break-word; word-break:break-word; }
+.table td:first-child { width:40%; font-weight:bold; }
+.panel-content { background-color:#eef3f8; border-left:3px solid #14699d; }
+.button-primary { background-color:#14699d; border-color:#14699d; color:#ffffff; font-size:14px; line-height:1.5; text-align:center; white-space:normal; }
