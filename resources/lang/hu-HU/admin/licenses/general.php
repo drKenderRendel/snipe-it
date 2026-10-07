@@ -8,7 +8,7 @@ return [
     'checkout' => 'Kiadás Licence ülés/kérelem',
     'edit' => 'Engedély szerkesztése',
     'filetype_info' => 'Az engedélyezett fájltípusok png, gif, jpg, jpeg, doc, docx, pdf, txt, zip és rar.',
-    'clone' => 'Clone License',
+    'clone' => 'Licenc másolása',
     'history_for' => 'A történelem',
     'in_out' => 'Be ki',
     'info' => 'Licensz információ',
@@ -30,12 +30,10 @@ return [
             'success' => 'Licenc visszavétel sikeres! | Minden licenc sikeresen visszavéve!',
             'log_msg' => 'Visszaadva a licenc GUI-ban végzett tömeges licenchely-visszaadással.”',
         ],
-
         'checkin_selected' => [
-            'success' => ':count seat checked in successfully. | :count seats checked in successfully.',
-            'no_seats_selected' => 'No seats were selected.',
+            'success' => ':count licenchely sikeresen visszavéve.|:count licenchely sikeresen visszavéve.',
+            'no_seats_selected' => 'Nincs kiválasztott licenchely.',
         ],
-
         'checkout_all' => [
             'button' => 'Minden licenchely kadása',
             'modal' => 'Ez a művelet egy licenchelyt ad ki az első elérhető felhasználónak. | Ez a művelet az összes, :available_seats_count licenchelyt kiosztja az első elérhető felhasználóknak. Egy felhasználó az adott licenchelyre elérhetőnek számít, ha még nincs hozzá kiosztva, és az Automatikus licenckiosztás beállítás engedélyezve van a felhasználói fiókjában.',
@@ -45,16 +43,13 @@ return [
             'error_no_seats' => 'Ehhez a licenchöz már nincs szabad licenchely.',
             'warn_not_enough_seats' => ':count felhasználónak lett kiosztva ez a licenc, de elfogytak az elérhető licenchelyek.',
             'warn_no_avail_users' => 'Nincs teendő. Nincsenek olyan felhasználók, akiknek még nincs hozzárendelve ez a licenc.',
-            'log_msg' => 'Checked out via bulk license checkout in license GUI',
-
+            'log_msg' => 'Kiadva a licenckezelő felület tömeges licenckiadásával',
         ],
-
         'delete_with_checkin' => [
-            'label' => 'Check in seats and delete',
-            'log_msg' => 'Checked in via bulk delete-with-checkin in license index',
+            'label' => 'Licenchelyek visszavétele és törlés',
+            'log_msg' => 'Visszavéve a licenclista tömeges visszavételi és törlési műveletével',
         ],
     ],
-
     'below_threshold' => 'Ehhez a licenchez már csak :remaining_count hely maradt, a minimálisan elvárt mennyiség pedig :min_amt. Érdemes lehet további helyeket vásárolni.',
     'below_threshold_short' => 'Ebből az elemből nincs meg a beállított minimum mennyiség.',
 ];

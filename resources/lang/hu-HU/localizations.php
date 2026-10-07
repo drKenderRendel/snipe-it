@@ -1,15 +1,14 @@
 <?php
 
 return [
-
     'select_language' => 'Nyelv kiválasztása',
     'languages' => [
         'en-US' => 'Angol, Amerikai Egyesült Államok',
         'en-GB' => 'Angol, Egyesült Királyság',
         'am-ET' => 'Amhara',
-        'af-ZA' => 'Afrikaans',
+        'af-ZA' => 'afrikaans',
         'ar-SA' => 'Arab',
-        'hy-AM' => 'Örmény',
+        'hy-AM' => 'örmény',
         'bg-BG' => 'Bolgár',
         'zh-CN' => 'Egyszerűsített kínai',
         'zh-TW' => 'Hagyományos kínai',
@@ -39,11 +38,10 @@ return [
         'lv-LV' => 'Lett',
         'mk-MK' => 'Macedón',
         'ms-MY' => 'Maláj',
-        'mi-NZ' => 'Maori',
+        'mi-NZ' => 'maori',
         'mn-MN' => 'Mongol',
         'nb-NO' => 'Norvég Bokmål',
         'om-ET' => 'Oromó (Etióp)',
-        // 'nn-NO'=> 'Norwegian Nynorsk',
         'fa-IR' => 'Perzsa',
         'pl-PL' => 'Lengyel',
         'pt-PT' => 'Portugál',
@@ -59,18 +57,16 @@ return [
         'es-MX' => 'Spanyol, Mexikó',
         'es-VE' => 'Spanyol, Venezuela',
         'sv-SE' => 'Svéd',
-        'tl-PH' => 'Tagalog',
-        'ta-IN' => 'Tamil',
-        'th-TH' => 'Thai',
+        'tl-PH' => 'tagalog',
+        'ta-IN' => 'tamil',
+        'th-TH' => 'thai',
         'tr-TR' => 'Török',
         'uk-UA' => 'Ukrán',
         'vi-VN' => 'Vietnámi',
         'cy-GB' => 'Walesi',
-        'zu-ZA' => 'Zulu',
+        'zu-ZA' => 'zulu',
     ],
-
     'select_country' => 'Válasszon ki egy országot',
-
     'countries' => [
         'AC' => 'Ascension-sziget',
         'AD' => 'Andorra',

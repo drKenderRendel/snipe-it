@@ -2,7 +2,7 @@
 
 return [
     'dl_csv' => 'CSV letöltése',
-    'eula_text' => 'EULA',
+    'eula_text' => 'Végfelhasználói engedély',
     'id' => 'ID',
     'require_acceptance' => 'Elfogad',
     'title' => 'Tartozék neve',

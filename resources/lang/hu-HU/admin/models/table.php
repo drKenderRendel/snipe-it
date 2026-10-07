@@ -1,10 +1,9 @@
 <?php
 
 return [
-
     'create' => 'Eszköz modell létrehozása',
     'created_at' => 'Létrehozva',
-    'eol' => 'EOL',
+    'eol' => 'Lejárat',
     'modelnumber' => 'Modell Száma.',
     'name' => 'Eszközmodell neve',
     'numassets' => 'Eszközök',

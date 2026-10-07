@@ -1,20 +1,6 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Permissions
-    |--------------------------------------------------------------------------
-    | The following language lines are used in the user permissions system.
-    | Each permission has a 'name' and a 'note' that describes
-    | the permission in detail.
-    |
-    | DO NOT edit the keys (left-hand side) of each permission as these are
-    | used throughout the system for translations.
-    |---------------------------------------------------------------------------
-    */
-
     'superuser' => [
         'name' => 'Super user',
         'note' => 'Meghatározza, hogy a felhasználó teljes hozzáféréssel rendelkezik-e az adminisztráció minden területéhez. Ez a beállítás felülír minden egyéb, a rendszerben megadott specifikusabb és korlátozóbb jogosultságot ',
@@ -23,143 +9,120 @@ return [
         'name' => 'Adminisztrátori hozzáférés',
         'note' => 'Meghatározza, hogy a felhasználó hozzáfér-e a rendszer legtöbb területéhez, KIVÉVE a Rendszeradminisztrátori beállításokat. Ezek a felhasználók kezelhetik a felhasználókat, helyszíneket, kategóriákat stb., de a Teljes többvállalatos támogatás beállításai korlátozzák őket, amennyiben az engedélyezve van.',
     ],
-
     'import' => [
         'name' => 'CSV betöltés',
         'note' => 'Ez lehetővé teszi a felhasználók számára az importálást akkor is, ha máshol a rendszerben nincs hozzáférésük a felhasználókhoz, eszközökhöz stb.',
     ],
-
     'reports' => [
         'name' => 'Hozzáférés a jelentésekhez',
         'note' => 'Meghatározza, hogy a felhasználó hozzáfér-e az alkalmazás Jelentések menüpontjához.',
     ],
-
     'assets' => [
         'name' => 'Eszközök',
         'note' => 'Hozzáférést biztosít az alkalmazás Eszközök menüpontjához. ',
     ],
-
     'assetsview' => [
         'name' => 'Eszközök megtekintése',
-        'note' => 'Note that users with this permission will also be able to see (not modify or delete) files uploaded to the asset model as well. This is to make it easier to share common documents like user manuals across assets without having to upload them to every asset, and to avoid having to grant the user permission to modify asset files. Users with this permission will also be able to view edit and checkin history.',
+        'note' => 'Ezzel a jogosultsággal a felhasználó az eszközmodellhez feltöltött fájlokat is megtekintheti, de nem módosíthatja vagy törölheti. Így a közös dokumentumok, például használati útmutatók több eszköz között is megoszthatók anélkül, hogy mindegyikhez külön fel kellene tölteni őket vagy fájlszerkesztési jogosultságot kellene adni. A felhasználó a szerkesztési és visszavételi előzményeket is megtekintheti.',
     ],
-
     'assetscreate' => [
         'name' => 'Új eszközök létrehozása',
     ],
-
     'assetsedit' => [
         'name' => 'Eszközök szerkesztése',
     ],
-
     'assetsdelete' => [
         'name' => 'Eszközök törlése',
     ],
-
     'assetscheckin' => [
         'name' => 'Visszavételezés',
         'note' => 'A jelenleg kiadott eszközök visszavételezése a készletbe.',
     ],
-
     'assetscheckout' => [
         'name' => 'Kiadás',
         'note' => 'Eszközök hozzárendelése a készletből kiadással.',
     ],
-
     'assetsaudit' => [
         'name' => 'Eszközök auditálása',
         'note' => 'Lehetővé teszi a felhasználó számára, hogy egy eszközt fizikailag leltározottként jelöljön meg.',
     ],
-
     'assetsviewrequestable' => [
-        'name' => 'Igényelhető eszközök megtekintése',
-        'note' => 'Allows the user to view items that are marked as requestable.',
+        'name' => 'Igényelhető tételek megtekintése',
+        'note' => 'A felhasználó megtekintheti az igényelhetőként megjelölt tételeket.',
     ],
-
     'assetsviewencrypted-custom-fields' => [
-        'name' => 'Titkosított mezők megtekintése',
-        'note' => 'Allows the user to view and modify encrypted custom fields on assets.',
+        'name' => 'Titkosított egyéni mezők megtekintése',
+        'note' => 'A felhasználó megtekintheti és módosíthatja az eszközök titkosított egyéni mezőit.',
     ],
-
     'accessories' => [
         'name' => 'Tartozékok',
-        'note' => 'Grants access to the Accessories section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás tartozékok részéhez.',
     ],
-
     'accessoriesview' => [
-        'name' => 'Kiegészítők megtekintése',
+        'name' => 'Tartozékok megtekintése',
     ],
     'accessoriescreate' => [
-        'name' => 'Új kiegészítők létrehozása',
+        'name' => 'Új tartozék létrehozása',
     ],
     'accessoriesedit' => [
-        'name' => 'Kiegészítők szerkesztése',
+        'name' => 'Tartozékok szerkesztése',
     ],
     'accessoriesdelete' => [
-        'name' => 'Kiegészítők törlése',
+        'name' => 'Tartozékok törlése',
     ],
     'accessoriescheckout' => [
-        'name' => 'Check Out Accessories',
-        'note' => 'Assign accessories in inventory by checking them out.',
+        'name' => 'Tartozékok kiadása',
+        'note' => 'A felhasználó kiadással rendelhet hozzá tartozékokat a készletből.',
     ],
     'accessoriescheckin' => [
-        'name' => 'Check In Accessories',
-        'note' => 'Check accessories back into inventory that are currently checked out.',
+        'name' => 'Tartozékok visszavétele',
+        'note' => 'A felhasználó visszaveheti a készletbe a jelenleg kiadott tartozékokat.',
     ],
     'accessoriesfiles' => [
-        'name' => 'Kiegészítő fileok kezelése',
-        'note' => 'Allows the user to upload, download, and delete files associated with accessories. (This only makes sense with view privileges or higher.)',
+        'name' => 'Tartozékfájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a tartozékokhoz kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'assetsfiles' => [
-        'name' => 'Eszköz fileok kezelése',
-        'note' => 'Allows the user to upload, download, and delete files associated with assets. (This only makes sense with view privileges or higher.)',
+        'name' => 'Eszközfájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti az eszközökhöz kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'usersfiles' => [
-        'name' => 'Felhasználói fileok kezelése',
-        'note' => 'Allows the user to upload, download, and delete files associated with users. (This only makes sense with view privileges or higher.)',
+        'name' => 'Felhasználói fájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a felhasználókhoz kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'modelsfiles' => [
-        'name' => 'Modell fileok kezelése',
-        'note' => 'Allows the user to upload, download, and delete files associated with asset models on both the model view and the asset view screens. (This only makes sense with view privileges or higher.)',
+        'name' => 'Modellfájlok kezelése',
+        'note' => 'A felhasználó a modell- és az eszköznézetből is feltöltheti, letöltheti és törölheti az eszközmodellekhez kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'departmentsfiles' => [
-        'name' => 'Manage Department Files',
-        'note' => 'Allows the user to upload, download, and delete files associated with departments. (This only makes sense with view privileges or higher.)',
+        'name' => 'Részlegfájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a részlegekhez kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'suppliersfiles' => [
-        'name' => 'Manage Supplier Files',
-        'note' => 'Allows the user to upload, download, and delete files associated with suppliers. (This only makes sense with view privileges or higher.)',
+        'name' => 'Beszállítói fájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a beszállítókhoz kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'locationsfiles' => [
-        'name' => 'Manage Location Files',
-        'note' => 'Allows the user to upload, download, and delete files associated with locations.(This only makes sense with view privileges or higher.)',
+        'name' => 'Helyekhez kapcsolódó fájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a helyekhez kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'companiesfiles' => [
-        'name' => 'Manage Company Files',
-        'note' => 'Allows the user to upload, download, and delete files associated with companies. (This only makes sense with view privileges or higher.)',
+        'name' => 'Céges fájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a cégekhez kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'consumablesfiles' => [
-        'name' => 'Manage Consumable Files',
-        'note' => 'Allows the user to upload, download, and delete files associated with consumables. (This only makes sense with view privileges or higher.)',
+        'name' => 'Fogyóeszközfájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a fogyóeszközökhöz kapcsolódó fájlokat. Megtekintési vagy magasabb jogosultsággal együtt használható.',
     ],
-
     'consumables' => [
         'name' => 'Fogyóeszközök',
-        'note' => 'Grants access to the Consumables section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás fogyóeszközök részéhez.',
     ],
     'consumablesview' => [
         'name' => 'Fogyóeszközök megtekintése',
     ],
     'consumablescreate' => [
-        'name' => 'Új fogyóeszközök létrehozása',
+        'name' => 'Új fogyóeszköz létrehozása',
     ],
     'consumablesedit' => [
         'name' => 'Fogyóeszközök szerkesztése',
@@ -168,115 +131,111 @@ return [
         'name' => 'Fogyóeszközök törlése',
     ],
     'consumablescheckout' => [
-        'name' => 'Check Out Consumables',
-        'note' => 'Assign consumables in inventory by checking them out.',
+        'name' => 'Fogyóeszközök kiadása',
+        'note' => 'A felhasználó kiadással rendelhet hozzá fogyóeszközöket a készletből.',
     ],
-
     'licenses' => [
         'name' => 'Licencek',
-        'note' => 'Grants access to the Licenses section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás licencek részéhez.',
     ],
     'licensesview' => [
-        'name' => 'Licenszek megtekintése',
+        'name' => 'Licencek megtekintése',
     ],
     'licensescreate' => [
-        'name' => 'Új licenszek létrehozása',
+        'name' => 'Új licenc létrehozása',
     ],
     'licensesedit' => [
-        'name' => 'Licenszek szerkesztése',
+        'name' => 'Licencek szerkesztése',
     ],
     'licensesdelete' => [
-        'name' => 'Licenszek törlése',
+        'name' => 'Licencek törlése',
     ],
     'licensescheckout' => [
-        'name' => 'Licenszek hozzárendelése',
-        'note' => 'Allows the user to assign licenses to assets or users.',
+        'name' => 'Licencek hozzárendelése',
+        'note' => 'A felhasználó licenceket rendelhet eszközökhöz vagy felhasználókhoz.',
     ],
     'licensescheckin' => [
-        'name' => 'Licensz hozzárendelések eltávolítása',
-        'note' => 'Allows the user to unassign licenses from assets or users.',
+        'name' => 'Licencek visszavétele',
+        'note' => 'A felhasználó megszüntetheti a licencek eszközökhöz vagy felhasználókhoz rendelését.',
     ],
     'licensesfiles' => [
-        'name' => 'Licensz fileok kezelése',
-        'note' => 'Allows the user to upload, download, and delete files associated with licenses.',
+        'name' => 'Licencfájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti a licencekhez kapcsolódó fájlokat.',
     ],
     'componentsfiles' => [
-        'name' => 'Manage Component Files',
-        'note' => 'Allows the user to upload, download, and delete files associated with components.',
+        'name' => 'Alkatrészfájlok kezelése',
+        'note' => 'A felhasználó feltöltheti, letöltheti és törölheti az alkatrészekhez kapcsolódó fájlokat.',
     ],
-
     'licenseskeys' => [
-        'name' => 'Manage License Keys',
-        'note' => 'Allows the user to view product keys associated with licenses.',
+        'name' => 'Licenckulcsok kezelése',
+        'note' => 'A felhasználó megtekintheti a licencekhez tartozó termékkulcsokat.',
     ],
     'components' => [
         'name' => 'Alkatrészek',
-        'note' => 'Grants access to the Components section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás alkatrészek részéhez.',
     ],
     'componentsview' => [
-        'name' => 'View Components',
+        'name' => 'Alkatrészek megtekintése',
     ],
     'componentscreate' => [
-        'name' => 'Create New Components',
+        'name' => 'Új alkatrész létrehozása',
     ],
     'componentsedit' => [
-        'name' => 'Edit Components',
+        'name' => 'Alkatrészek szerkesztése',
     ],
     'componentsdelete' => [
-        'name' => 'Delete Components',
+        'name' => 'Alkatrészek törlése',
     ],
-
     'componentscheckout' => [
-        'name' => 'Check Out Components',
-        'note' => 'Assign components in inventory by checking them out.',
+        'name' => 'Alkatrészek kiadása',
+        'note' => 'A felhasználó kiadással rendelhet hozzá alkatrészeket a készletből.',
     ],
     'componentscheckin' => [
-        'name' => 'Check In Components',
-        'note' => 'Check components back into inventory that are currently checked out.',
+        'name' => 'Alkatrészek visszavétele',
+        'note' => 'A felhasználó visszaveheti a készletbe a jelenleg kiadott alkatrészeket.',
     ],
     'kits' => [
         'name' => 'Előre definiált csomagok',
-        'note' => 'Grants access to the Predefined Kits section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás előre összeállított készletek részéhez.',
     ],
     'kitsview' => [
-        'name' => 'View Predefined Kits',
+        'name' => 'Előre összeállított készletek megtekintése',
     ],
     'kitscreate' => [
-        'name' => 'Create New Predefined Kits',
+        'name' => 'Új előre összeállított készlet létrehozása',
     ],
     'kitsedit' => [
-        'name' => 'Edit Predefined Kits',
+        'name' => 'Előre összeállított készletek szerkesztése',
     ],
     'kitsdelete' => [
-        'name' => 'Delete Predefined Kits',
+        'name' => 'Előre összeállított készletek törlése',
     ],
     'users' => [
         'name' => 'Felhasználók',
-        'note' => 'Grants access to the Users section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás felhasználók részéhez.',
     ],
     'usersview' => [
         'name' => 'Felhasználók megtekintése',
-        'note' => 'Note that users with this permission will also be able to see (not modify or delete) files uploaded to the user as well. Users with this permission will also be able to view edit and checkin history.',
+        'note' => 'Ezzel a jogosultsággal a felhasználó a felhasználói rekordokhoz feltöltött fájlokat is megtekintheti, de nem módosíthatja vagy törölheti. A szerkesztési és visszavételi előzményeket is megtekintheti.',
     ],
     'userscreate' => [
-        'name' => 'Create New Users',
+        'name' => 'Új felhasználó létrehozása',
     ],
     'usersedit' => [
-        'name' => 'Edit Users',
+        'name' => 'Felhasználók szerkesztése',
     ],
     'usersdelete' => [
         'name' => 'Felhasználók törlése',
     ],
     'models' => [
         'name' => 'Modellek',
-        'note' => 'Grants access to the Models section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás modellek részéhez.',
     ],
     'modelsview' => [
         'name' => 'Modellek megtekintése',
     ],
-
     'modelscreate' => [
-        'name' => 'Új modellek létrehozása',
+        'name' => 'Új modell létrehozása',
     ],
     'modelsedit' => [
         'name' => 'Modellek szerkesztése',
@@ -286,13 +245,13 @@ return [
     ],
     'categories' => [
         'name' => 'Kategóriák',
-        'note' => 'Hozzáférése biztosítása az alkalmazás "Kategóriák" részéhez.',
+        'note' => 'Hozzáférést biztosít az alkalmazás kategóriák részéhez.',
     ],
     'categoriesview' => [
         'name' => 'Kategóriák megtekintése',
     ],
     'categoriescreate' => [
-        'name' => 'Új kategóriák létrehozása',
+        'name' => 'Új kategória létrehozása',
     ],
     'categoriesedit' => [
         'name' => 'Kategóriák szerkesztése',
@@ -302,61 +261,61 @@ return [
     ],
     'departments' => [
         'name' => 'Osztályok',
-        'note' => 'Grants access to the Departments section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás részlegek részéhez.',
     ],
     'departmentsview' => [
-        'name' => 'View Departments',
+        'name' => 'Részlegek megtekintése',
     ],
     'departmentscreate' => [
-        'name' => 'Create New Departments',
+        'name' => 'Új részleg létrehozása',
     ],
     'departmentsedit' => [
-        'name' => 'Edit Departments',
+        'name' => 'Részlegek szerkesztése',
     ],
     'departmentsdelete' => [
-        'name' => 'Delete Departments',
+        'name' => 'Részlegek törlése',
     ],
     'locations' => [
         'name' => 'Helyek',
-        'note' => 'Grants access to the Locations section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás helyek részéhez.',
     ],
     'locationsview' => [
-        'name' => 'View Locations',
+        'name' => 'Helyek megtekintése',
     ],
     'locationscreate' => [
-        'name' => 'Create New Locations',
+        'name' => 'Új hely létrehozása',
     ],
     'locationsedit' => [
-        'name' => 'Edit Locations',
+        'name' => 'Helyek szerkesztése',
     ],
     'locationsdelete' => [
-        'name' => 'Delete Locations',
+        'name' => 'Helyek törlése',
     ],
     'status-labels' => [
         'name' => 'Státusz címkék',
-        'note' => 'Grants access to the Status Labels section of the application used by Assets.',
+        'note' => 'Hozzáférést biztosít az eszközök állapotcímkéinek kezeléséhez.',
     ],
     'statuslabelsview' => [
-        'name' => 'View Status Labels',
+        'name' => 'Állapotcímkék megtekintése',
     ],
     'statuslabelscreate' => [
-        'name' => 'Create New Status Labels',
+        'name' => 'Új állapotcímke létrehozása',
     ],
     'statuslabelsedit' => [
-        'name' => 'Edit Status Labels',
+        'name' => 'Állapotcímkék szerkesztése',
     ],
     'statuslabelsdelete' => [
-        'name' => 'Delete Status Labels',
+        'name' => 'Állapotcímkék törlése',
     ],
     'custom-fields' => [
         'name' => 'Egyéni mezők',
-        'note' => 'Hozzáférése biztosítása az alkalmazásben az Eszközök által használt "Egyéni mezők" részhez.',
+        'note' => 'Hozzáférést biztosít az eszközök egyéni mezőinek kezeléséhez.',
     ],
     'customfieldsview' => [
         'name' => 'Egyéni mezők megtekintése',
     ],
     'customfieldscreate' => [
-        'name' => 'Új egyéni mezők létrehozása',
+        'name' => 'Új egyéni mező létrehozása',
     ],
     'customfieldsedit' => [
         'name' => 'Egyéni mezők szerkesztése',
@@ -366,13 +325,13 @@ return [
     ],
     'suppliers' => [
         'name' => 'Beszállítók',
-        'note' => 'Hozzáférése biztosítása az alkalmazás "Beszállítók" részéhez.',
+        'note' => 'Hozzáférést biztosít az alkalmazás beszállítók részéhez.',
     ],
     'suppliersview' => [
         'name' => 'Beszállítók megtekintése',
     ],
     'supplierscreate' => [
-        'name' => 'Új beszállítók létrehozása',
+        'name' => 'Új beszállító létrehozása',
     ],
     'suppliersedit' => [
         'name' => 'Beszállítók szerkesztése',
@@ -382,13 +341,13 @@ return [
     ],
     'manufacturers' => [
         'name' => 'Gyártók',
-        'note' => 'Hozzáférése biztosítása az alkalmazás "Gyártók" részéhez.',
+        'note' => 'Hozzáférést biztosít az alkalmazás gyártók részéhez.',
     ],
     'manufacturersview' => [
         'name' => 'Gyártók megtekintése',
     ],
     'manufacturerscreate' => [
-        'name' => 'Új gyártók létrehozása',
+        'name' => 'Új gyártó létrehozása',
     ],
     'manufacturersedit' => [
         'name' => 'Gyártók szerkesztése',
@@ -398,68 +357,65 @@ return [
     ],
     'companies' => [
         'name' => 'Cégek',
-        'note' => 'Grants access to the Companies section of the application.',
+        'note' => 'Hozzáférést biztosít az alkalmazás cégek részéhez.',
     ],
     'companiesview' => [
-        'name' => 'View Companies',
+        'name' => 'Cégek megtekintése',
     ],
     'companiescreate' => [
-        'name' => 'Create New Companies',
+        'name' => 'Új cég létrehozása',
     ],
     'companiesedit' => [
-        'name' => 'Edit Companies',
+        'name' => 'Cégek szerkesztése',
     ],
     'companiesdelete' => [
-        'name' => 'Delete Companies',
+        'name' => 'Cégek törlése',
     ],
     'user-self-accounts' => [
-        'name' => 'User Self Accounts',
-        'note' => 'Grants non-admin users the ability to manage certain aspects of their own user accounts.',
+        'name' => 'Saját felhasználói fiókok kezelése',
+        'note' => 'A rendszergazdai jogosultság nélküli felhasználók kezelhetik saját fiókjuk bizonyos beállításait.',
     ],
     'selftwo-factor' => [
-        'name' => 'Kétfaktoros azonosítás kezelése',
-        'note' => 'Allows users to enable, disable, and manage two-factor authentication for their own accounts.',
+        'name' => 'Kétfaktoros hitelesítés kezelése',
+        'note' => 'A felhasználók engedélyezhetik, letilthatják és kezelhetik saját fiókjuk kétfaktoros hitelesítését.',
     ],
     'selfapi' => [
-        'name' => 'API Tokenek kezelése',
-        'note' => 'Allows users to create, view, and revoke their own API tokens. User tokens will have the same permissions as the user who created them.',
+        'name' => 'API-tokenek kezelése',
+        'note' => 'A felhasználók létrehozhatják, megtekinthetik és visszavonhatják saját API-tokenjeiket. A tokenek a létrehozó felhasználóval azonos jogosultságokat kapnak.',
     ],
     'selfedit-location' => [
-        'name' => 'Edit Location',
-        'note' => 'Allows users to edit the location associated with their own user account.',
+        'name' => 'Saját hely szerkesztése',
+        'note' => 'A felhasználók szerkeszthetik saját fiókjukhoz rendelt helyüket.',
     ],
     'selfcheckout-assets' => [
-        'name' => 'Self Check Out Assets',
-        'note' => 'Allows users to check out assets to themselves without admin intervention.',
+        'name' => 'Eszközök kiadása saját részre',
+        'note' => 'A felhasználók rendszergazdai közreműködés nélkül adhatnak ki eszközöket saját maguknak.',
     ],
     'selfview-purchase-cost' => [
-        'name' => 'View Purchase Cost',
-        'note' => 'Allows users to view the purchase cost of items in their account view.',
+        'name' => 'Beszerzési ár megtekintése',
+        'note' => 'A felhasználók saját fiókjukban megtekinthetik a hozzájuk tartozó tételek beszerzési árát.',
     ],
-
     'depreciations' => [
-        'name' => 'Depreciation Management',
-        'note' => 'Allows users to manage and view asset depreciation details.',
+        'name' => 'Értékcsökkenés kezelése',
+        'note' => 'A felhasználók kezelhetik és megtekinthetik az eszközök értékcsökkenési adatait.',
     ],
     'depreciationsview' => [
-        'name' => 'View Depreciation Details',
+        'name' => 'Értékcsökkenési adatok megtekintése',
     ],
     'depreciationsedit' => [
-        'name' => 'Edit Depreciation Settings',
+        'name' => 'Értékcsökkenési beállítások szerkesztése',
     ],
     'depreciationsdelete' => [
-        'name' => 'Delete Depreciation Records',
+        'name' => 'Értékcsökkenési bejegyzések törlése',
     ],
     'depreciationscreate' => [
-        'name' => 'Create Depreciation Records',
+        'name' => 'Értékcsökkenési bejegyzések létrehozása',
     ],
-
-    'grant_all' => 'Grant all permissions for :area',
-    'deny_all' => 'Deny all permissions for :area',
-    'inherit_all' => 'Inherit all permissions for :area from permission groups',
-    'grant' => 'Grant Permission for :area',
-    'deny' => 'Deny Permission for :area',
-    'inherit' => 'Inherit Permission for :area from permission groups',
-    'use_groups' => 'We strongly suggest using Permission Groups instead of assigning individual permissions for easier management.',
-
+    'grant_all' => 'Összes jogosultság engedélyezése ehhez: :area',
+    'deny_all' => 'Összes jogosultság megtagadása ehhez: :area',
+    'inherit_all' => 'Összes jogosultság öröklése jogosultsági csoportokból ehhez: :area',
+    'grant' => 'Jogosultság engedélyezése ehhez: :area',
+    'deny' => 'Jogosultság megtagadása ehhez: :area',
+    'inherit' => 'Jogosultság öröklése jogosultsági csoportokból ehhez: :area',
+    'use_groups' => 'A könnyebb kezelés érdekében egyéni jogosultságok helyett jogosultsági csoportok használata javasolt.',
 ];

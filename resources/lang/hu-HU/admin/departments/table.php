@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'id' => 'ID',
     'name' => 'Osztály neve',
     'manager' => 'Vezető',

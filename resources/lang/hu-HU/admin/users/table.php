@@ -17,7 +17,7 @@ return [
     'last_login' => 'Utolsó bejelentkezés',
     'last_name' => 'Vezetéknév',
     'location' => 'Helyszín',
-    'lock_passwords' => 'Some user details cannot be changed on the demo. Try creating a new user instead.',
+    'lock_passwords' => 'A bemutatóban egyes felhasználói adatok nem módosíthatók. Hozzon létre új felhasználót.',
     'manager' => 'Felettes',
     'managed_locations' => 'Kezelt helyek',
     'managed_users' => 'Kezelt Felhasználók',

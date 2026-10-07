@@ -16,7 +16,7 @@ return [
         'confirm' => 'Biztosan törölni szeretnéd a vállalatot?',
         'error' => 'Probléma támadt a vállalat törlésével. Próbálkozz újra.',
         'success' => 'A vállalat sikeresen törölve lett.',
-        'bulk_success' => 'Company deleted successfully.|:count companies were deleted successfully.',
-        'partial_success' => 'Company deleted successfully. See additional information below. | :count companies were deleted successfully. See additional information below.',
+        'bulk_success' => 'A cég sikeresen törölve.|:count cég sikeresen törölve.',
+        'partial_success' => 'A cég sikeresen törölve. További információt alább talál.|:count cég sikeresen törölve. További információt alább talál.',
     ],
 ];

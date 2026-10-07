@@ -23,7 +23,7 @@ return [
     'add_maintenance' => 'Karbantartás hozzáadása',
     'append' => 'Hozzáillesztés',
     'new' => 'Új',
-    'show_hide_info' => 'További információk mutatása/elrejtése',
+    'show_hide_info' => 'További információk megjelenítése/elrejtése',
     'var' => [
         'clone' => 'Klón :item_type',
         'edit' => ':item_type szerkesztése',

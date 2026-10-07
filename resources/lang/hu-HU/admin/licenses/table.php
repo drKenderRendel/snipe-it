@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'assigned_to' => 'Hozzárendelve',
     'checkout' => 'Be/ki',
     'deleted_at' => 'Törölve',
@@ -14,5 +13,4 @@ return [
     'hardware' => 'Hardver',
     'serial' => 'Sorozatszám',
     'title' => 'Licensz',
-
 ];

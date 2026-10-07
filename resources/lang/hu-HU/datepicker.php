@@ -1,20 +1,8 @@
 <?php
 
 return [
-
-    /*
-    |--------------------------------------------------------------------------
-    | Authentication Language Lines
-    |--------------------------------------------------------------------------
-    |
-    | The following language lines are used during authentication for various
-    | messages that we need to display to the user. You are free to modify
-    | these language lines according to your application's requirements.
-    |
-    */
-
-    'week_start_select' => 'Válassza ki a hét napját',
-    'week_start' => 'Hét első napja',
+    'week_start_select' => 'A hét napjának kiválasztása',
+    'week_start' => 'A hét kezdőnapja',
     'today' => 'Ma',
     'clear' => 'Kiürítés',
     'days' => [
@@ -26,7 +14,6 @@ return [
         'friday' => 'Péntek',
         'saturday' => 'Szombat',
     ],
-
     'short_days' => [
         'sunday' => 'Vas',
         'monday' => 'H',
@@ -36,7 +23,6 @@ return [
         'friday' => 'P',
         'saturday' => 'Szo',
     ],
-
     'min_days' => [
         'sunday' => 'V',
         'monday' => 'H',
@@ -46,7 +32,6 @@ return [
         'friday' => 'P',
         'saturday' => 'Szo',
     ],
-
     'months' => [
         'january' => 'Január',
         'february' => 'Február',
@@ -58,23 +43,21 @@ return [
         'august' => 'Augusztus',
         'september' => 'Szeptember',
         'october' => 'Október',
-        'november' => 'November',
-        'december' => 'December',
+        'november' => 'november',
+        'december' => 'december',
     ],
-
     'months_short' => [
-        'january' => 'Jan',
+        'january' => 'jan.',
         'february' => 'Febr',
         'march' => 'Márc',
         'april' => 'Ápr',
         'may' => 'Máj',
         'june' => 'Jún',
         'july' => 'Júl',
-        'august' => 'Aug',
+        'august' => 'aug.',
         'september' => 'Szept',
         'october' => 'Okt',
-        'november' => 'Nov',
-        'december' => 'Dec',
+        'november' => 'nov.',
+        'december' => 'dec.',
     ],
-
 ];

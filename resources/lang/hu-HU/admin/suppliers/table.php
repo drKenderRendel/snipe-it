@@ -22,5 +22,4 @@ return [
     'view' => 'Beszállító megtekintése',
     'view_assets_for' => 'Eszközök megtekintése',
     'zip' => 'Irányítószám',
-
 ];

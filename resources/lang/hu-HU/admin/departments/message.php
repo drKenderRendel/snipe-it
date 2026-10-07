@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'does_not_exist' => 'A tanszék nem létezik.',
     'department_already_exists' => 'Már létezik egy részleg ezzel a névvel ezen a helyen. Válasszon egy másik nevet ehhez a részleghez. ',
     'assoc_users' => 'Ez a részleg jelenleg társított legalább egy felhasználót, és nem lehet törölni. Kérjük, frissítse a felhasználókat, hogy ne hivatkozzanak az osztályon, és próbálja újra.',
@@ -17,8 +16,7 @@ return [
         'confirm' => 'Biztosan törölni szeretné ezt az osztályt?',
         'error' => 'Hiba történt a részleg törlésével. Kérlek próbáld újra.',
         'success' => 'Az osztály sikeresen törölve lett.',
-        'bulk_success' => 'Department deleted successfully.|:count departments were deleted successfully.',
-        'partial_success' => 'Department deleted successfully. See additional information below. | :count departments were deleted successfully. See additional information below.',
+        'bulk_success' => 'A részleg sikeresen törölve.|:count részleg sikeresen törölve.',
+        'partial_success' => 'A részleg sikeresen törölve. További információt alább talál.|:count részleg sikeresen törölve. További információt alább talál.',
     ],
-
 ];

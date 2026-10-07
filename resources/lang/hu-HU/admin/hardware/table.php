@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'asset_tag' => 'Eszköz cimke',
     'asset_model' => 'Modell',
     'assigned_to' => 'Felelős',
@@ -25,7 +24,7 @@ return [
     'image' => 'Készülék kép',
     'days_without_acceptance' => 'Nem elfogadás óta eltelt napok száma',
     'monthly_depreciation' => 'Havi értékcsökkenés',
-    'requesting_user' => 'Kérvényezte',
+    'requesting_user' => 'Igénylő felhasználó',
     'pending_requesters' => 'Kérvényezte még',
     'requested_date' => 'Kért időpont',
     'changed' => 'Módosítva',

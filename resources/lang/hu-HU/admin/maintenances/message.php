@@ -19,10 +19,10 @@ return [
     'warranty' => 'Garancia',
     'not_warranty' => 'Nem garancia',
     'complete' => [
-        'confirm' => 'Are you sure you want to mark this maintenance as complete? This cannot be undone.',
-        'success' => 'Maintenance marked as complete.',
-        'error' => 'There was an issue marking this maintenance as complete. Please try again.',
+        'confirm' => 'Biztosan befejezettként jelöli meg ezt a karbantartást? Ez a művelet nem vonható vissza.',
+        'success' => 'A karbantartás befejezettként megjelölve.',
+        'error' => 'Hiba történt a karbantartás befejezettként megjelölésekor. Próbálja újra.',
     ],
-    'bulk_delete' => 'No maintenance records were deleted (:skipped skipped).|Deleted :count maintenance record. (:skipped skipped)|Deleted :count maintenance records. (:skipped skipped)',
-    'bulk_complete' => 'No maintenance records were marked complete (:skipped skipped or already complete).|Marked :count maintenance record complete. (:skipped skipped or already complete)|Marked :count maintenance records complete. (:skipped skipped or already complete)',
+    'bulk_delete' => 'Egyetlen karbantartási bejegyzés sem lett törölve (:skipped kihagyva).|:count karbantartási bejegyzés törölve (:skipped kihagyva).|:count karbantartási bejegyzés törölve (:skipped kihagyva).',
+    'bulk_complete' => 'Egyetlen karbantartási bejegyzés sem lett befejezettként megjelölve (:skipped kihagyva vagy már befejezett).|:count karbantartási bejegyzés befejezettként megjelölve (:skipped kihagyva vagy már befejezett).|:count karbantartási bejegyzés befejezettként megjelölve (:skipped kihagyva vagy már befejezett).',
 ];

@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'disabled_assoc' => [
         'accessory' => 'Ez a tartozék nem törölhető, mert még eszközök, felhasználók vagy helyszínek vannak hozzárendelve',
         'asset' => 'Ez az eszköz nem törölhető, mert még elemek vannak hozzárendelve',
@@ -16,9 +15,7 @@ return [
         'user' => 'Ez a felhasználó nem törölhető mert még elemek vannak hozzárendelve',
         'user_self' => 'Nem törölheti saját magát',
     ],
-
     'checkin_all' => [
         'user' => 'Vételezze vissza a felhasználó összes elemét és opcionálisan törölje őket A következő oldalon megerősítheti ezt.',
     ],
-
 ];

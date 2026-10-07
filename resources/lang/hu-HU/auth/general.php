@@ -2,7 +2,7 @@
 
 return [
     'send_password_link' => 'Jelszó visszaállítási link küldése',
-    'email_reset_password' => 'Jelsó visszaállítási e-mail',
+    'email_reset_password' => 'Jelszó visszaállítási e-mail',
     'reset_password' => 'Jelszó visszaállítása',
     'saml_login' => 'Belépés SAML-al',
     'login' => 'Belépés',
@@ -15,5 +15,4 @@ return [
     'google_login' => 'Bejelentkezés Google Workspace-el',
     'google_login_failed' => 'Google bejelentkezés sikertelen, kérem, próbálja újra.',
     'invite_password_expires' => 'Ez a jelszó-visszaállításhoz használt link :expire_date napon jár le. Erre a linkre kattintva tudsz új visszaállítási kulcsot kérni',
-
 ];

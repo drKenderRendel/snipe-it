@@ -6,5 +6,4 @@ return [
     'parent' => 'Szülő',
     'require_acceptance' => 'Elfogadás',
     'title' => 'Eszköz-kategória neve',
-
 ];

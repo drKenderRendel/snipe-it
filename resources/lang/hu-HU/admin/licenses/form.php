@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     'asset' => 'Eszköz',
     'checkin' => 'Kiadás',
     'create' => 'Licensz létrehozása',
