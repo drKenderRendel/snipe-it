@@ -13,11 +13,6 @@ use App\Models\Labels\RectangleSheet;
  */
 class ELA013 extends RectangleSheet
 {
-    // Required by Snipe-IT versions where Label::preparePDF() is abstract.
-    public function preparePDF(\TCPDF $pdf): void
-    {
-    }
-
     private const PAGE_WIDTH = 210.0;
     private const PAGE_HEIGHT = 297.0;
     private const LABEL_WIDTH = 70.0;
